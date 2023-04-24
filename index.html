@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <title>Bootstrap</title>
+</head>
+
+<body style="background-color: burlywood;">
+
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: rgba(40, 31, 46, 0.87);">
+        <div class="container">
+            <a class="navbar-brand" href="#">RegularArt</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                                aria-controls="menu" aria-expanded="false" aria-label="Botão de Navegação">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav me-auto">
+                    <input type="text" placeholder="Pesquisa" id="search">
+                    <a class="nav-link nav-item" href="#home">Home</a>
+                    <a class="nav-link nav-item" href="following.html">Following</a>
+                    <a class="nav-link nav-item" href="browsing.html">Browsing</a>
+
+                    <!-- <div class="dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" data-bs-toggle="dropdown" href="#">quarto</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">a</a>
+                            <a class="dropdown-item" href="#">b</a>
+                            <a class="dropdown-item" href="#">c</a>
+                            <a class="dropdown-item" href="#">d</a>
+                        </div>
+                    </div>
+                
+                    <a class="nav-link nav-item" href="#">Profile</a>
+                    <a class="nav-link nav-item" href="#header">Username</a> -->
+                </div>
+
+                <div class="navbar-nav">
+                    <a class="nav-link nav-item" href="#" type="button"
+                            data-toggle="popover" data-bs-title="Register" data-bs-placement="top" data-bs-html="true"
+                            data-bs-content="<input type='text' placeholder='conta' id='login'><br><br>
+                                            <input type='text' placeholder='senha' id='senha'><br><br>
+                                            <input type='text' placeholder='email' id='email'>">
+                        Registrar
+                    </a>
+                    
+                    <a class="nav-link nav-item" href="#" type="button"
+                            data-toggle="popover" data-bs-title="Login" data-bs-placement="top" data-bs-html="true"
+                            data-bs-content="<input type='text' placeholder='conta' id='login'><br><br>
+                                            <input type='text' placeholder='senha' id='senha'>">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Enter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="mb-5" style="overflow: hidden;">
+        <div class="bgimage d-none d-md-block mb-4"></div>
+    </div> -->
+
+    <div id="carousel-id" class="carousel slide d-none d-md-block mb-4"
+                style="margin-top: 55px;" data-bs-ride="carousel" data-interval="3000">
+        
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carousel-id" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel-id" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel-id" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carousel-id" data-bs-slide-to="3"></li>
+            <li data-bs-target="#carousel-id" data-bs-slide-to="4"></li>
+            <li data-bs-target="#carousel-id" data-bs-slide-to="5"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="" style="overflow: hidden;">
+                    <div class="bgimage d-none d-md-block" style="--background: url('../images/artworks/SimzArt2.jpg')"></div>
+                </div>
+                <div class="carousel-caption" style="top: 70px;">
+                    <div class="text-center">
+                        <div class="texto-1" style="position: absolute; z-index: 2; color: black; font-size: xx-large; font-weight: bold;">@SimzArt</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="" style="overflow: hidden;">
+                    <div class="bgimage d-none d-md-block" style="--background: url('../images/artworks/SimzArt1.jpg')"></div>
+                </div>
+                <div class="carousel-caption" style="top: 70px;">
+                    <div class="text-center">
+                        <div class="texto-1" style="position: absolute; z-index: 2; color: black; font-size: xx-large; font-weight: bold;">@SimzArt</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="" style="overflow: hidden;">
+                    <div class="bgimage d-none d-md-block" style="--background: url('../images/artworks/TeeniikaArt1.jpg')"></div>
+                </div>
+                <div class="carousel-caption" style="top: 70px;">
+                    <div class="text-center">
+                        <div class="texto-1" style="position: absolute; z-index: 2; color: black; font-size: xx-large; font-weight: bold;">@teeniika</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="" style="overflow: hidden;">
+                    <div class="bgimage d-none d-md-block" style="--background: url('../images/artworks/SuizillaArt3.jpg')"></div>
+                </div>
+                <div class="carousel-caption" style="top: 70px;">
+                    <div class="text-center">
+                        <div class="texto-1" style="position: absolute; z-index: 2; color: black; font-size: xx-large; font-weight: bold;">@suizilla</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="" style="overflow: hidden;">
+                    <div class="bgimage d-none d-md-block" style="--background: url('../images/artworks/FriedbaensArt1.jpg')"></div>
+                </div>
+                <div class="carousel-caption" style="top: 70px;">
+                    <div class="text-center">
+                        <div class="texto-1" style="position: absolute; z-index: 2; color: black; font-size: xx-large; font-weight: bold;">@friedbaens</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="" style="overflow: hidden;">
+                    <div class="bgimage d-none d-md-block" style="--background: url('../images/artworks/HiS2lArt4.jpg')"></div>
+                </div>
+                <div class="carousel-caption" style="top: 70px;">
+                    <div class="text-center">
+                        <div class="texto-1" style="position: absolute; z-index: 2; color: black; font-size: xx-large; font-weight: bold;">@HiS2l</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#carousel-id" class="carousel-control-prev" role="button" data-bs-slide="prev">
+            <span aria-hidden="true" class="carousel-control-prev-icon">
+                <span class="sr-only">Anterior</span>
+            </span>
+        </a>
+        <a href="#carousel-id" class="carousel-control-next" role="button" data-bs-slide="next">
+            <span aria-hidden="true" class="carousel-control-next-icon">
+                <span class="sr-only">Próximo</span>
+            </span>
+        </a>
+    </div>
+
+    <!-- <img class="mb-4" src="assets/images/SimzArt1.jpg"> -->
+
+    <div class="container">
+        <div class="jumbotron d-block d-md-none text-center mb-4" style="margin-top: 89px; background-color: rgb(69, 95, 93); padding: 30px;">
+            <h5>Welcome to RegularArt</h5>
+            <br>
+            <h5>Feel free to browse some artists</h5>
+        </div>
+    
+        <h4 id="Profiles" class="mb-3 text-center">Profiles for You</h4>
+
+        <div class="row mb-4">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/AuteruBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/AuteruProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="auteru.html">Auteru</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">⭐Friendly Neighborhood birb
+                                ⭐Artist
+                                🐣@Twitch
+                                 Partner: http://twitch.tv/Auteru🐣
+                                @advancedGG CODE: CHIRP
+                                🎨: #SqueakArt
+                                🤣: #MemeTeru
+                                ❤ @RenAdraVT
+                                 
+                                🌟#ENVtuber</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 align-items-stretch">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/SimzArtBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/SimzArtProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="simzarts.html">SimzArts</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">Simz
+                                Artista
+                                Art / Illustration / Comics
+                                🔹🔹🔹
+                                Other Socials and Shop
+                                🔻🔻🔻
+                                linktr.ee/simz.art</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/YuniihoBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/YuniihoProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="yuniiho.html">Yuniiho</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">VT 001
+                                Illustrator ✦ Dog VTuber 
+                                🎨#yunillust 
+                                @Twitch
+                                 & 
+                                @Discord Partner
+                                
+                                ✦ http://patreon.com/Yuniiho ✦
+                                
+                                ART: @Yuniiho RIG: @DyaRikku</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/DyaRikkuBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/DyaRikkuProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="dyarikku.html">DyaRikku</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">VT - 000 2D Artist/Illustrator, Live2D Modeller | 
+                                
+                                @twitch and 
+                                @discord Partner | #rikkugaki #dyahegao |
+                                
+                                http://dyarikku.com
+                                3D: @Yoolies
+                                 
+                                @JJinomu</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/DaVinciBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/DaVinciProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="davinci.html">DaVinci</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">Leonardo di Ser Piero da Vinci, ou simplesmente Leonardo da Vinci
+                                
+                                considered one of the greatest painters of all time
+                                
+                                epitomized the Renaissance humanist ideal.
+                            
+
+
+                                #MonaLisa</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/TsuguBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/TsuguProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="itsugu.html">itsugu</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">柚木 いつぐ Yunoki itsugu です。
+                                Mail→yuno4tsugu@gmail.com
+                                
+                                
+                                
+                                skeb→ https://skeb.jp/@tsugu_ht</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/TeeniikaBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/TeeniikaProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="teeniika.html">Teeniika</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">
+
+
+                                Icon    @sinin_zzz
+                                
+                                
+                                skeb     http://skeb.jp/@teeniika</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/SuizillaBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/SuizillaProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="suizilla.html">suizilla</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">• I draw (commissions closed)
+                                • I love character design
+                                
+                                • Tag for fanart is :  #SuisOcGallery
+                                
+                                IG: http://instagram.com/suizilla/</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/HiS2lBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/HiS2lProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="his2l.html">HiS2l</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">ましまし ♂一日一枚 感謝のお絵描き
+                                
+                                ご意見ご感想コーナー→
+                                    https://marshmallow-qa.com/his2l?utm_medium=url_text&utm_source=promotion
+                                
+                                ファンボ▶︎ https://his2l.fanbox.cc
+                                ⚠️( @ovt_k  )</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/PinponBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/PinponProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="pinpon.html">pinpon</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">豆井メマ
+                                @pinpon_sakana
+
+
+
+                                絵を描きます。 リンク集↓
+                                </p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/FriedbaensBanner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/FriedBaensProfile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="friedbaens.html">friedbaens</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">Gus! 🌱✨
+                                @friedbaens
+
+
+
+                                Visual development artist at Possibility Space </p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-3">
+                    <div class="cardBanner" style="background-image: url('assets/images/Fru12Banner.jpg');"></div>
+                    <div>
+                        <img class="profilePicture" src="assets/images/Fru12Profile.jpg">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title"><a href="fru12.html">F_RU12</a></h5>
+                                <p class="text-warning font-weight-bold">Artist</p>
+                            </div>
+                            <p class="card-text text-justify" style="white-space: pre-line;">Fru🍎
+                                @F_RU12
+                                흑발 조아
+
+
+
+                                왈도쿤님 썸네일러 Fru 입니다:)
+                                INSTAGRAM - http://instagram.com/f_ru12/
+                                youtube - https://youtube.com/@fru5313</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-outline-primary">Follow</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-3 col-sm-7">
+                    <h5>RegulartArt</h5>
+                    <!-- <a href='#' style="font-size: large; font-weight: bold;">RegularArt</a> -->
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-5">
+                    <ul class="list-unstyled">
+                        <li><a href='#'>About</a></li>
+                        <li><a href='#'>Contact</a></li>
+                        <li><a href='#'>Terms Of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-7">
+                    <ul class="list-unstyled">
+                        <li><a href='#'>Developers</a></li>
+                        <li><a href='#'>Advertise</a></li>
+                        <li><a href='#'>Terms Of Service</a></li>
+                        <li><a href='#'>Etiquette</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-sm-5">
+                    <ul class="list-unstyled">
+                        <li><a href='#'>Careers</a></li>
+                        <li><a href='#'>Privacy Policy</a></li>
+                        <li><a href='#'>Copyright Policy</a></li>
+                        <li><a href='#'>Help and FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

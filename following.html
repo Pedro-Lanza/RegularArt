@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <title>Bootstrap</title>
+</head>
+
+<body style="background-color: burlywood;">
+
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: rgba(40, 31, 46, 0.87);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">RegularArt</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                                aria-controls="menu" aria-expanded="false" aria-label="Botão de Navegação">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav me-auto">
+                    <input type="text" placeholder="Pesquisa" id="search">
+                    <a class="nav-link nav-item" href="index.html">Home</a>
+                    <a class="nav-link nav-item" href="following.html">Following</a>
+                    <a class="nav-link nav-item" href="browsing.html">Browsing</a>
+
+                    <!-- <div class="dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" data-bs-toggle="dropdown" href="#">quarto</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">a</a>
+                            <a class="dropdown-item" href="#">b</a>
+                            <a class="dropdown-item" href="#">c</a>
+                            <a class="dropdown-item" href="#">d</a>
+                        </div>
+                    </div>
+                
+                    <a class="nav-link nav-item" href="#">Profile</a>
+                    <a class="nav-link nav-item" href="#header">Username</a> -->
+                </div>
+
+                <div class="navbar-nav">
+                    <a class="nav-link nav-item" href="#" type="button"
+                            data-toggle="popover" data-bs-title="Register" data-bs-placement="top" data-bs-html="true"
+                            data-bs-content="<input type='text' placeholder='conta' id='login'><br><br>
+                                            <input type='text' placeholder='senha' id='senha'><br><br>
+                                            <input type='text' placeholder='email' id='email'>">
+                        Registrar
+                    </a>
+                    
+                    <a class="nav-link nav-item" href="#" type="button"
+                            data-toggle="popover" data-bs-title="Login" data-bs-placement="top" data-bs-html="true"
+                            data-bs-content="<input type='text' placeholder='conta' id='login'><br><br>
+                                            <input type='text' placeholder='senha' id='senha'>">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Enter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div style=" width: 100%; margin-top: 55px; display: flex;">
+
+        <div style="width: 20%; background-color: rgb(156, 124, 83);">
+            <div class="row">
+                
+                <div class="card" style="max-width: 100%; height: 100px; display: inline-block; overflow: hidden;">
+                        <div  style="height:100px; width: 100px; max-width: 100px;  display: inline-block">
+                            <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/AuteruProfile.jpg">
+                        </div>
+                        <!-- <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/AuteruProfile.jpg"> -->
+                        <div style="text-align: center; vertical-align: middle;  display: inline-block; height:125px; width: calc(100% - 105px);">
+                            Auteru
+                        </div>
+                </div>
+
+                <div class="card" style="max-width: 100%; height: 100px; display: inline-block; overflow: hidden;">
+                    <div  style="height:100px; width: 100px; max-width: 100px;  display: inline-block">
+                        <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/DyaRikkuProfile.jpg">
+                    </div>
+                    <!-- <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/AuteruProfile.jpg"> -->
+                    <div style="text-align: center; vertical-align: middle;  display: inline-block; height:125px; width: calc(100% - 105px);">
+                        DyaRikku
+                    </div>
+                </div>
+
+                <div class="card" style="max-width: 100%; height: 100px; display: inline-block; overflow: hidden;">
+                    <div  style="height:100px; width: 100px; max-width: 100px;  display: inline-block">
+                        <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/SimzArtProfile.jpg">
+                    </div>
+                    <!-- <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/AuteruProfile.jpg"> -->
+                    <div style="text-align: center; vertical-align: middle;  display: inline-block; height:125px; width: calc(100% - 105px);">
+                        SimzArts
+                    </div>
+                </div>
+
+                <div class="card" style="max-width: 100%; height: 100px; display: inline-block; overflow: hidden;">
+                    <div  style="height:100px; width: 100px; max-width: 100px;  display: inline-block">
+                        <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/HiS2lProfile.jpg">
+                    </div>
+                    <!-- <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/AuteruProfile.jpg"> -->
+                    <div style="text-align: center; vertical-align: middle;  display: inline-block; height:125px; width: calc(100% - 105px);">
+                        HiS2l
+                    </div>
+                </div>
+
+                <div class="card" style="max-width: 100%; height: 100px; display: inline-block; overflow: hidden;">
+                    <div  style="height:100px; width: 100px; max-width: 100px;  display: inline-block">
+                        <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/SuizillaProfile.jpg">
+                    </div>
+                    <!-- <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/AuteruProfile.jpg"> -->
+                    <div style="text-align: center; vertical-align: middle;  display: inline-block; height:125px; width: calc(100% - 105px);">
+                        Suizilla
+                    </div>
+                </div>
+
+                <div class="card" style="max-width: 100%; height: 100px; display: inline-block; overflow: hidden;">
+                    <div  style="height:100px; width: 100px; max-width: 100px;  display: inline-block">
+                        <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/PinponProfile.jpg">
+                    </div>
+                    <!-- <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/AuteruProfile.jpg"> -->
+                    <div style="text-align: center; vertical-align: middle;  display: inline-block; height:125px; width: calc(100% - 105px);">
+                        Pinpon_sakana
+                    </div>
+                </div>
+
+                <div class="card" style="max-width: 100%; height: 100px; display: inline-block; overflow: hidden;">
+                    <div  style="height:100px; width: 100px; max-width: 100px;  display: inline-block">
+                        <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/TsuguProfile.jpg">
+                    </div>
+                    <!-- <img class="profilePicture" style=" height:100px; width: 100px;" src="assets/images/AuteruProfile.jpg"> -->
+                    <div style="text-align: center; vertical-align: middle;  display: inline-block; height:125px; width: calc(100% - 105px);">
+                        Itsugu
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="display: inline-block; margin-left: 5%; width: calc(80% - 35px);">
+            <div class="container">
+                <div class="row gx-5">
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/SimzArt1.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/HiS2lArt2.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/SimzArt2.jpg);"></div>    
+                    </card> 
+                    
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/TeeniikaArt1.jpg);"></div>    
+                    </card>
+                    
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/FriedbaensArt1.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/TsuguArt2.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/SuizillaArt1.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/PinponArt1.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/SuizillaArt2.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/SuizillaArt3.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/FRU12Art1.jpg);"></div>    
+                    </card>
+                    
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/FRU12Art2.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/FRU12Art3.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/FRU12Art4.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/SimzArt3.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/SimzArt4.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/SimzArt5.jpg);"></div>    
+                    </card>
+
+                    <card class="mb-3 col-lg-4 col-md-6">
+                        <div style="height: 300px; width: 300px; background-size: cover; background-image: url(assets/images/artworks/SimzArt6.jpg);"></div>    
+                    </card>
+
+                </div>
+            </div>
+        </div>
+
+        <div ></div> 
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-3 col-sm-7">
+                    <h5>RegulartArt</h5>
+                    <!-- <a href='#' style="font-size: large; font-weight: bold;">RegularArt</a> -->
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-5">
+                    <ul class="list-unstyled">
+                        <li><a href='#'>About</a></li>
+                        <li><a href='#'>Contact</a></li>
+                        <li><a href='#'>Terms Of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-7">
+                    <ul class="list-unstyled">
+                        <li><a href='#'>Developers</a></li>
+                        <li><a href='#'>Advertise</a></li>
+                        <li><a href='#'>Terms Of Service</a></li>
+                        <li><a href='#'>Etiquette</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-sm-5">
+                    <ul class="list-unstyled">
+                        <li><a href='#'>Careers</a></li>
+                        <li><a href='#'>Privacy Policy</a></li>
+                        <li><a href='#'>Copyright Policy</a></li>
+                        <li><a href='#'>Help and FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
